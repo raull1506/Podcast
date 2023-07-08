@@ -1,0 +1,69 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css')
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css')
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;550;600&display=swap')
+
+@media( min-width: 280px)
+
+	header
+		position: sticky
+		top: 0
+		z-index: 2
+		--dark: #1f1f1fbe
+		background: var(--dark)		
+	
+		nav
+			height: 8vh
+			display: flex
+			justify-content: space-between
+			align-items: center
+			padding: 0px 15px
+			backdrop-filter: blur(5px)
+			box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px
+			
+			button
+				border: none
+				padding: 5px
+				outline: none
+				background-color: #ffffff00
+
+				i
+					font-size: 1.7rem
+					display: flex
+			
+			p
+				font-size: 1.1rem
+				font-family: 'Poppins'
+
+		ul
+			display: flex
+			flex-direction: column
+			align-items: center
+			list-style: none
+			height: 92vh
+			background: #1e1e1e8f
+			backdrop-filter: blur(10px)
+			position: absolute
+			width: 100%
+			transform: translateX(-100%)
+			transition: .2s
+
+			&.active
+				transform: translateX(0)
+
+			li
+				display: flex
+				width: 100%
+
+			a
+				padding: 25px
+				width: 100%
+				text-align: center
+				text-decoration: none
+				font-family: "Poppins", sans-serif
+				font-size: 1.5rem
+				transition: .2s 
+
+				&:active
+					background:  #ffffff20
+			
+			-webkit-tap-highlight-color:  transparent

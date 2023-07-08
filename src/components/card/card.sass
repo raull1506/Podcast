@@ -1,0 +1,45 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css')
+
+.card_container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-family: "Poppins"
+    margin-bottom: 5px
+    transition: .2s
+    padding: 10px 15px
+    border-radius: 10px
+
+
+    &:active
+        background: #ffffff20
+
+    img
+        width: 64px
+        height: 64px
+        background-color: blue
+        border-radius: 15px
+
+    .card_title
+        width: calc(100% - 64px - 1.5rem - 50px)
+    
+        h2
+            font-size: 1.2rem
+            font-weight: 600
+        h3
+            font-size: .8rem
+            font-weight: 400
+    
+    button
+        background: var(--blue)
+        width: 35px
+        height: 35px
+        display: flex
+        align-items: center 
+        justify-content: center
+        border-radius: 50%
+        border: none
+        outline: none
+        
+    i
+        display: flex
